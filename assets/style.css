@@ -28,5 +28,5 @@ body {
 
 .chat{
     width: calc(100% / 3 * 2);
-    background-image: url('./img/mine.jpg');
+    background-image: url('../img/mine.jpg');
 }

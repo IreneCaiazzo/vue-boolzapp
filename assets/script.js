@@ -18,7 +18,7 @@
 // I pulsanti e le icone possono non funzionare (a parte l’invio del messaggio)
 // Per gestire le date, può essere utile la libreria Luxon
 
-const app = Vue.crateApp({
+const app = Vue.createApp({
     data(){
         return{
             contacts: [
