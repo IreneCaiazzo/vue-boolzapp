@@ -24,7 +24,7 @@ const app = Vue.crateApp({
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: './img/avatar_1.png',
+                    avatar: './img/avatar_1.jpg',
                     visible: true,
                     messages: [
                         {
@@ -46,7 +46,7 @@ const app = Vue.crateApp({
                 },
                 {
                     name: 'Fabio',
-                    avatar: './img/avatar_2.png',
+                    avatar: './img/avatar_2.jpg',
                     visible: true,
                     messages: [
                         {
@@ -68,7 +68,7 @@ const app = Vue.crateApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: './img/avatar_3.png',
+                    avatar: './img/avatar_3.jpg',
                     visible: true,
                     messages: [
                         {
@@ -90,7 +90,7 @@ const app = Vue.crateApp({
                 },
                 {
                     name: 'Alessandro B.',
-                    avatar: './img/avatar_4.png',
+                    avatar: './img/avatar_4.jpg',
                     visible: true,
                     messages: [
                         {
@@ -107,7 +107,7 @@ const app = Vue.crateApp({
                 },
                 {
                     name: 'Alessandro L.',
-                    avatar: './img/avatar_5.png',
+                    avatar: './img/avatar_5.jpg',
                     visible: true,
                     messages: [
                         {
@@ -124,7 +124,7 @@ const app = Vue.crateApp({
                 },
                 {
                     name: 'Claudia',
-                    avatar: './img/avatar_5.png',
+                    avatar: './img/avatar_5.jpg',
                     visible: true,
                     messages: [
                         {
@@ -146,7 +146,7 @@ const app = Vue.crateApp({
                 },
                 {
                     name: 'Federico',
-                    avatar: './img/avatar_7.png',
+                    avatar: './img/avatar_7.jpg',
                     visible: true,
                     messages: [
                         {
@@ -163,7 +163,7 @@ const app = Vue.crateApp({
                 },
                 {
                     name: 'Davide',
-                    avatar: './img/avatar_8.png',
+                    avatar: './img/avatar_8.jpg',
                     visible: true,
                     messages: [
                         {

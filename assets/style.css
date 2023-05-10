@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #009688 20%,
+        #D8DBD5 20%
+    );
+}
+
+#app{
+    display: flex;
+    width:85%;
+    height: 85%;
+    background-color: white;
+}
+
+.contacts{
+    width: calc(100% / 3)
+}
+
+.chat{
+    width: calc(100% / 3 * 2);
+    background-image: url('./img/mine.jpg');
+}
