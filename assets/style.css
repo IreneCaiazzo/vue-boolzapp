@@ -62,6 +62,13 @@ img{
     margin-bottom: 1rem;
 }
 
+.contacts{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 199px);
+    overflow-y: scroll;
+}
+
 .contacts li{
     display: flex;
     gap: .5rem;
@@ -95,6 +102,7 @@ img{
 .chat .current-chat{
     width: 100%;
     height: calc(100% - 8rem);
+    overflow-y: scroll;
 }
 
 .input-message input{
