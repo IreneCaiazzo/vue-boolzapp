@@ -89,16 +89,13 @@
             </div>
 
             <div class="current-chat">
-                <div class="message sent" v-for="objContact in contacts">
-                   <div 
-                   class="text" 
-                   :key="objContact" 
-                   v-for="(message, index) in messages"
-                   >
-                       {{messages.message[index]}}
-                   </div>
-                    
-                    <div class="date">11/05/23</div>
+                <div 
+                class="message sent" 
+                :key="objContact" 
+                v-for="(objMessage, index) in contacts[activeIndex].messages"
+                >
+                    {{objMessage.message}}
+                    <span class="date">{{objMessage.date}}</span>
                 </div>
 
                 <!-- <div class="message sent">
