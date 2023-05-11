@@ -42,7 +42,6 @@ img{
 
 .notifications{
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: .3rem;
 }
@@ -55,11 +54,18 @@ img{
     height: 2.5rem;
     border-radius: 50%;
     background-color:#8EDAFC;
-    margin-right: .5rem;
+    margin: 1rem;
+}
+
+.searchbar{
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
 }
 
 .contacts li{
     display: flex;
+    gap: .5rem;
+    align-items: center;
     list-style: none;
     margin-bottom: 1rem;
 }
