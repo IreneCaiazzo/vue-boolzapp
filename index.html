@@ -89,26 +89,31 @@
             </div>
 
             <div class="current-chat">
-                <div class="message sent">
-                    <div class="text">
-                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptas quaerat magni aspernatur natus doloribus sint atque magnam delectus quae dolore labore architecto repellat distinctio, id voluptatum odit nesciunt doloremque.
-                    </div>
+                <div class="message sent" v-for="objContact in contacts">
+                   <div 
+                   class="text" 
+                   :key="objContact" 
+                   v-for="(message, index) in messages"
+                   >
+                       {{messages.message[index]}}
+                   </div>
+                    
                     <div class="date">11/05/23</div>
                 </div>
 
-                <div class="message sent">
-                    <div class="text">
-                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptas quaerat magni aspernatur natus doloribus sint atque magnam delectus quae dolore labore architecto repellat distinctio, id voluptatum odit nesciunt doloremque.
-                    </div>
+                <!-- <div class="message sent">
+                   
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptas quaerat magni aspernatur natus doloribus sint atque magnam delectus quae dolore labore architecto repellat distinctio, id voluptatum odit nesciunt doloremque.
+                    
                     <div class="date">11/05/23</div>
                 </div>
 
                 <div class="message received">
-                    <div class="text">
-                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptas quaerat magni aspernatur natus doloribus sint atque magnam delectus quae dolore labore architecto repellat distinctio, id voluptatum odit nesciunt doloremque.
-                    </div>
+                   
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptas quaerat magni aspernatur natus doloribus sint atque magnam delectus quae dolore labore architecto repellat distinctio, id voluptatum odit nesciunt doloremque.
+                    
                     <div class="date">11/05/23</div>
-                </div>
+                </div> -->
 
 
             </div>

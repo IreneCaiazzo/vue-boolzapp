@@ -22,7 +22,7 @@ const app = Vue.createApp({
     data(){
         return{
 
-            activeIndex: '',
+            activeIndex: 0,
 
             user:{
                 name: 'Me Medesima',
