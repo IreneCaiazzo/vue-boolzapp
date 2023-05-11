@@ -87,6 +87,14 @@ img{
     background-image: url('../img/mine.jpg');
 }
 
+.chat .user{
+    display: flex;
+}
+
+.chat .user h5{
+    padding-left: 1rem;
+}
+
 .account,
 .chat .current-contact,
 .chat .input-message{
