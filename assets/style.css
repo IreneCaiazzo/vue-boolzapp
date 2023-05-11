@@ -77,6 +77,10 @@ img{
     margin-bottom: 1rem;
 }
 
+.contacts li:hover{
+    background-color: #EAEAEA;
+}
+
 /* chat */
 
 .chat{
