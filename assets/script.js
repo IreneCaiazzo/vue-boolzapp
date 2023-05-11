@@ -21,6 +21,12 @@
 const app = Vue.createApp({
     data(){
         return{
+
+            user:{
+                name: 'Me Medesima',
+                avatar: 'img/avatar_io.jpg'
+            },
+
             contacts: [
                 {
                     name: 'Michele',
