@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: sans-serif;
+}
 
 body {
     display: grid;
@@ -112,9 +115,35 @@ img{
 }
 
 .chat .current-chat{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 2rem 3rem;
     width: 100%;
     height: calc(100% - 8rem);
     overflow-y: scroll;
+}
+
+.chat .current-chat .message{
+    max-width: 60%;
+    padding: .8rem;
+    padding-bottom: 0;
+    border-radius: 5px;
+}
+
+.chat .current-chat .sent{
+    align-self: flex-end;
+    background-color: #D5F9BA;
+}
+.chat .current-chat .received{
+    align-self: flex-start;
+    background-color: white;
+}
+
+.chat .current-chat .date{
+   text-align: end;
+   padding: .3rem;
+   font-size: .8rem;
 }
 
 .input-message input{

@@ -22,6 +22,8 @@ const app = Vue.createApp({
     data(){
         return{
 
+            activeIndex: '',
+
             user:{
                 name: 'Me Medesima',
                 avatar: 'img/avatar_io.jpg'
