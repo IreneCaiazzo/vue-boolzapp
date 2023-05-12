@@ -95,7 +95,8 @@
                 v-for="(objMessage, index) in contacts[activeIndex].messages"
                 >
                     {{objMessage.message}}
-                    <span class="date">{{objMessage.date}}</span>
+                    
+                    <span class="date">{{objMessage.date.slice(11,16)}}</span>
                 </div>
 
                 <!-- <div class="message sent">
