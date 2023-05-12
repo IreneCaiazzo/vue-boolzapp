@@ -131,11 +131,11 @@ img{
     border-radius: 5px;
 }
 
-.chat .current-chat .sent{
+.chat .current-chat .message.sent{
     align-self: flex-end;
     background-color: #D5F9BA;
 }
-.chat .current-chat .received{
+.chat .current-chat .message.received{
     align-self: flex-start;
     background-color: white;
 }

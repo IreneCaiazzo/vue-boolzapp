@@ -197,6 +197,10 @@ const app = Vue.createApp({
     },
     methods: {
 
+        setActiveIndex(i){
+            this.activeIndex = i
+        }
+
     }
 });
 

@@ -61,8 +61,14 @@
             <div class="contacts ">
 
                 <ul>
-                    <li v-for="objContact in contacts">
-                        <img :key="objContact" :src="objContact.avatar" alt="">
+                    <li v-for="(objContact, i) in contacts"
+                    :class="{active: i == activeIndex}"
+                    @click="setActiveIndex(i)">
+                        <img 
+                        
+                        :key="objContact" 
+                        :src="objContact.avatar" 
+                        alt="">
                         <h5>{{objContact.name}}</h5>
                     </li>
                     
@@ -74,7 +80,7 @@
 
         <div class="chat">
 
-            <div class="current-contact">
+            <div class="current-contact" :class="objMessage.avatar" v-for="(objMessage, index) in contacts[activeIndex]">
                 <div class="user">
                     <img src="img/avatar_1.jpg">
                     <h5>nome</h5>
@@ -90,7 +96,8 @@
 
             <div class="current-chat">
                 <div 
-                class="message sent" 
+                class="message" 
+                :class="objMessage.status == 'sent' ? 'sent' : received"
                 :key="objContact" 
                 v-for="(objMessage, index) in contacts[activeIndex].messages"
                 >
