@@ -80,10 +80,10 @@
 
         <div class="chat">
 
-            <div class="current-contact" :class="objMessage.avatar" v-for="(objMessage, index) in contacts[activeIndex]">
+            <div class="current-contact" :class="{active: i == activeIndex}">
                 <div class="user">
-                    <img src="img/avatar_1.jpg">
-                    <h5>nome</h5>
+                    <img :src="contacts[activeIndex].avatar">
+                    <h5>{{contacts[activeIndex].name}}</h5>
                 </div>
 
                 <div class="options">
@@ -97,7 +97,7 @@
             <div class="current-chat">
                 <div 
                 class="message" 
-                :class="objMessage.status == 'sent' ? 'sent' : received"
+                :class="objMessage.status == 'sent' ? 'sent' : 'received'"
                 :key="objContact" 
                 v-for="(objMessage, index) in contacts[activeIndex].messages"
                 >
