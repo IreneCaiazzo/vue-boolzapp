@@ -24,6 +24,8 @@ const app = Vue.createApp({
 
             activeIndex: 0,
 
+            text: '',
+
             user:{
                 name: 'Me Medesima',
                 avatar: 'img/avatar_io.jpg'
@@ -201,15 +203,16 @@ const app = Vue.createApp({
             this.activeIndex = i
         },
 
-        sendMessage(activeIndex){
+        sendMessage(text, activeIndex){
 
             let newMessge = {
                 date:'',
-                message: 'text',
+                message: text,
                 status: 'sent'
             }
 
             this.contacts[activeIndex].messages.push(newMessge);
+            this.text = '';
         },
 
     }
