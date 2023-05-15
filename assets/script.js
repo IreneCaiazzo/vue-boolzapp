@@ -199,7 +199,18 @@ const app = Vue.createApp({
 
         setActiveIndex(i){
             this.activeIndex = i
-        }
+        },
+
+        sendMessage(activeIndex){
+
+            let newMessge = {
+                date:'',
+                message: 'text',
+                status: 'sent'
+            }
+
+            this.contacts[activeIndex].messages.push(newMessge);
+        },
 
     }
 });
