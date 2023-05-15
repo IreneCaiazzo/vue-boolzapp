@@ -213,6 +213,15 @@ const app = Vue.createApp({
 
             this.contacts[activeIndex].messages.push(newMessge);
             this.text = '';
+
+            setTimeout(() => {
+                let messageReceived = {
+                    date: '',
+                    message: "Ok",
+                    status: 'received'
+                };
+                this.contacts[activeIndex].messages.push(messageReceived);
+            }, 1000);
         },
 
     }
