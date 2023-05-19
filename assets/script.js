@@ -19,14 +19,16 @@
 // Per gestire le date, può essere utile la libreria Luxon
 
 const app = Vue.createApp({
-    data(){
-        return{
+    data() {
+        return {
 
             activeIndex: 0,
 
             text: '',
 
-            user:{
+            search: '',
+
+            user: {
                 name: 'Me Medesima',
                 avatar: 'img/avatar_io.jpg'
             },
@@ -194,19 +196,19 @@ const app = Vue.createApp({
                     ],
                 }
             ],
-            
+
         };
     },
     methods: {
 
-        setActiveIndex(i){
+        setActiveIndex(i) {
             this.activeIndex = i
         },
 
-        sendMessage(text, activeIndex){
+        sendMessage(text, activeIndex) {
 
             let newMessge = {
-                date:'',
+                date: '',
                 message: text,
                 status: 'sent'
             }
@@ -224,7 +226,15 @@ const app = Vue.createApp({
             }, 1000);
         },
 
-    }
+    },
+    computed: {
+        filteredContact() {
+            return this.contacts.filter((contacts) => {
+                return contacts.name.toLowerCase().includes(this.search.toLowerCase());
+            })
+        },
+
+    },
 });
 
 app.mount('#app')
